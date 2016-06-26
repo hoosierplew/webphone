@@ -56,6 +56,27 @@ WebPhone will have several premium features such as phone call transcripts, voic
 
 * [Web Storage Web API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) to enable saving important session-based information regarding current and recent calls without the need for more invasive cookies, including audio messages to be sent when internet connections fail
 
+### Functional Wireframe
+
+#### Prereqs
+In order to run the functional wireframe on your machine, you should have the following items installed:
+* [Node Package Manager](https://nodejs.org/en/download/package-manager/)
+* [Bower](https://bower.io/#install-bower)
+* [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
+
+#### Setup
+1. Clone this Repo to your local machine
+2. In a terminal, navigate to the `/app` directory within the Repo and run the following commands in order:
+```bash
+npm update
+bower update
+gulp
+```
+3. A browser window should pop up at this point with the application - hooray!
+
+#### Available Actions
+Imma put things here that the user can do on as I build this thing out.
+
 ----
 
 ## Questions
