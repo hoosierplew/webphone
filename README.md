@@ -10,13 +10,13 @@ Deliverables include any written thoughts, sketches and/or wireframes created du
 
 #### Skype
 
-- [x] **Initiate and receive calls to any phone number or contact** (_desktop browser only_)
+- [X] **Initiate and receive calls to any phone number or contact** (_desktop browser only_)
 
 Skype allows its users to initiate and receive calls to any phone number or contact by providing a dialpad within the browser for calls. Users can import contacts from several social media channels by searching contacts within those channels for associated Skype accounts.
 
 Interestingly, Skype does not support browser-based usage of its services within a tablet or mobile device. Users must use the Skype app available for that device.
 
-- [x] **Listen to any voice messages left for them** (_desktop browser only_)
+- [X] **Listen to any voice messages left for them** (_desktop browser only_)
 
 Skype offers both voice and video messaging via a chat window associated with a contact. Users who pay for a subscription have access to a phone number with the ability to listen to voice messages from that number within the Skype environment.
 
@@ -31,7 +31,7 @@ Google Voice allows users to send and receive calls from any phone number, but o
 
 Google Voice's phone calling system is different from desktop to mobile device. For desktop users, Google Voice allows the user to initiate a call and send it to either their mobile device or to Google Hangouts. The user then leaves the Google Voice environment to complete the call.
 
-- [x] **Listen to any voice messages left for them**
+- [X] **Listen to any voice messages left for them**
 
 Voicemails sent to the user's Google Voice phone number are available in-app.
 
