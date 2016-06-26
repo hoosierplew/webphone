@@ -25,7 +25,7 @@ Skype offers both voice and video messaging via a chat window associated with a 
 
 #### Google Voice
 
-- [] **Initiate and receive calls to any phone number or contact** (_phone browser only_)
+- [ ] **Initiate and receive calls to any phone number or contact** (_phone browser only_)
 
 Google Voice allows users to send and receive calls from any phone number, but only allows Google Contacts data to be used for looking up contacts. Other avenues for finding contact information (Facebook, Twitter, Linkedin, etc) are not available.
 
