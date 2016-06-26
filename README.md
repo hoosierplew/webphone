@@ -65,14 +65,14 @@ In order to run the functional wireframe on your machine, you should have the fo
 * [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
 #### Setup
-1. Clone this Repo to your local machine
-2. In a terminal, navigate to the `/app` directory within the Repo and run the following commands in order:
+* Clone this Repo to your local machine
+* In a terminal, navigate to the `/app` directory within the Repo and run the following commands in order:
 ```bash
 npm update
 bower update
 gulp
 ```
-3. A browser window should pop up at this point with the application - hooray!
+* A browser window should pop up at this point with the application - hooray!
 
 #### Available Actions
 Imma put things here that the user can do on as I build this thing out.
