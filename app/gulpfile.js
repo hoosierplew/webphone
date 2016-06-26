@@ -27,7 +27,8 @@ var paths = {
   // Sass will check these folders for files when you use @import.
   sass: [
     'client/assets/scss',
-    'bower_components/foundation-apps/scss'
+    'bower_components/foundation-apps/scss',
+    'node_modules/font-awesome/scss'
   ],
   // These files include Foundation for Apps and its dependencies
   foundationJS: [
@@ -46,7 +47,7 @@ var paths = {
   appJS: [
     'client/assets/js/app.js'
   ]
-}
+};
 
 // 3. TASKS
 // - - - - - - - - - - - - - - -
@@ -54,6 +55,11 @@ var paths = {
 // Cleans the build directory
 gulp.task('clean', function(cb) {
   rimraf('./build', cb);
+});
+
+gulp.task('fonts', function() {
+  gulp.src('node_modules/font-awesome/fonts')
+    .pipe(gulp.dest('build/assets/fonts'));
 });
 
 // Copies everything in the client folder except templates, Sass, and JS
@@ -113,7 +119,7 @@ gulp.task('sass', function () {
 });
 
 // Compiles and copies the Foundation for Apps JavaScript, as well as your app's custom JS
-gulp.task('uglify', ['uglify:foundation', 'uglify:app'])
+gulp.task('uglify', ['uglify:foundation', 'uglify:app']);
 
 gulp.task('uglify:foundation', function(cb) {
   var uglify = $.if(isProduction, $.uglify()
@@ -156,7 +162,7 @@ gulp.task('server', ['build'], function() {
 
 // Builds your entire app once, without starting a server
 gulp.task('build', function(cb) {
-  sequence('clean', ['copy', 'copy:foundation', 'sass', 'uglify'], 'copy:templates', cb);
+  sequence('clean', ['copy', 'copy:foundation', 'sass', 'fonts', 'uglify'], 'copy:templates', cb);
 });
 
 // Default task: builds your app, starts a server, and recompiles assets when they change
