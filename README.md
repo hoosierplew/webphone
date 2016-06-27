@@ -50,7 +50,7 @@ WebPhone will have several premium features such as phone call transcripts, voic
 
 ### Tools
 
-* [Foundation for Apps], an Angular-based front-end framework, to support the basic front-end behavior of the site.
+* [Foundation for Apps](http://foundation.zurb.com/apps.html), an Angular-based front-end framework, to support the basic front-end behavior of the site.
 
 * [Notifications Web API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) to support notifying the user of incoming calls, call interruptions, and other important events
 
