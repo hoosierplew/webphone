@@ -58,7 +58,7 @@ WebPhone will have several premium features such as phone call transcripts, voic
 
 ### Preliminary Sketches
 
-**Home Page: Mobile Device**
+**[Home Page: Mobile Device](mockups/WebPhone%20-%20Mobile.jpeg)**
 
 I took a mobile-first approach to this design, supposing the app's audience may be inclined to use the browser on their phone to make calls on a regular basis.
 
@@ -67,7 +67,7 @@ I took a mobile-first approach to this design, supposing the app's audience may 
 * *Hitbox*: I've noted the need to increase the size of list results to provide better touch screen capability
 * *Monochromatic Iconography*: Prior to identifying the iconset for this project, I noted the need for monochromatic iconography for better usability
 
-**Home Page: Desktop Browser**
+**[Home Page: Desktop Browser](mockups/WebPhone%20-%20Desktop.jpeg)**
 
 I sketched out a desktop layout for the application, attempting to take advantage of additional screen real estate available to the user.
 
