@@ -1,0 +1,42 @@
+
+<div class="grid-block small-12 vertical medium-horizontal">
+  <div class="grid-content small-12">
+    <section class="block-list recent-activities">
+      <header>Speed Dial</header>
+      <ul>
+        <li ng-repeat="contact in contacts | filter: {favorite: true}" class="clearfix">
+          <a href="#">
+            <div class="activity-icon">
+              <i class="fa" ng-class="{'fa-google': contact.contactType=='google','fa-envelope': contact.contactType=='email', 'fa-facebook-official': contact.contactType=='facebook', 'fa-phone': contact.contactType=='phone', 'fa-twitter': contact.contactType=='twitter'}"></i>
+            </div>
+            <div class="activity-info">
+              <span>{{contact.to_s}}</span>
+              <small>{{contact.detail}}</small>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="grid-content small-12">
+    <section class="block-list recent-activities">
+      <header>All Contacts</header>
+      <ul>
+        <li>
+          <input type="search" placeholder="Find a Contact">
+        </li>
+        <li ng-repeat="contact in contacts" class="clearfix">
+          <a href="#">
+            <div class="activity-icon">
+              <i class="fa" ng-class="{'fa-google': contact.contactType=='google','fa-envelope': contact.contactType=='email', 'fa-facebook-official': contact.contactType=='facebook', 'fa-phone': contact.contactType=='phone', 'fa-twitter': contact.contactType=='twitter'}"></i>
+            </div>
+            <div class="activity-info">
+              <span>{{contact.to_s}}</span>
+              <small>{{contact.detail}}</small>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

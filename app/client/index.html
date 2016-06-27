@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation for Apps</title>
+    <title>WebPhone: Phone Calls From the Internet!</title>
     <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
     <script src="./assets/js/foundation.js"></script>
     <script src="./assets/js/templates.js"></script>
@@ -11,13 +11,48 @@
     <script src="./assets/js/app.js"></script>
   </head>
   <body>
-    <div class="grid-frame vertical">
-      <div class="grid-content shrink" style="padding: 0;">
-        <ul class="primary condense menu-bar">
-          <li><a><strong>Foundation for Apps</strong></a></li>
+    <div class="grid-frame vertical clearfix">
+      <div id="main-header"  class="grid-content shrink" style="padding: 0;">
+        <ul class="dark condense menu-bar float-left">
+          <li class="show-for-small-only">
+            <a href="#" zf-toggle="main-nav"><i class="fa fa-bars"></i></a>
+          </li>
+          <li><a ui-sref="home"><strong>WebPhone</strong></a></li>
+        </ul>
+        <ul class="dark condense menu-bar float-right">
+          <li><a href="#"><i class="fa fa-clock-o"></i></a></li>
+          <li><a href="#"><i class="fa fa-user"></i></a></li>
         </ul>
       </div>
-      <div ui-view class="grid-content">
+      <div class="grid-block">
+        <div id="main-nav" class="medium-grid-block collapse medium-3" zf-panel>
+          <div class="grid-content">
+            <ul class="vertical primary menu-bar">
+              <li><a href="#" ui-sref="call"> <i class="fa fa-phone"></i>Make a Call</a></li>
+              <li><a href="#"> <i class="fa fa-clock-o"></i>Call History</a></li>
+              <li><a href="#"> <i class="fa fa-users"></i>Contacts</a></li>
+              <li><a href="#"> <i class="fa fa-sliders"></i>Account Settings</a></li>
+              <li><a href="#"> <i class="fa fa-sun-o"></i>Go Premium</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-container small-12">
+          <div id="main-search" class="grid-block collapse small-12 medium-9">
+            <span class="inline-label">
+              <input type="search" placeholder="Enter a contact name or phone number">
+              <a href="#" class="button large secondary"><i class="fa fa-phone"></i></a>
+            </span>
+          </div>
+          <div id="main-content" class="grid-block vertical medium-horizontal small-12 medium-9" ui-view></div>
+        </div>
+      </div>
+      <div id="main-footer"  class="grid-content shrink" style="padding: 0;">
+        <ul class="dark condense menu-bar float-left">
+          <li><a><strong>&copy; 2016 Weyland-Yutani Corp.</strong></a></li>
+        </ul>
+        <ul class="dark condense menu-bar float-right">
+          <li><a href="#">Terms &amp; Conditions</i></a></li>
+        </ul>
       </div>
     </div>
   </body>

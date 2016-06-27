@@ -1,5 +1,35 @@
 
-<div class="grid-container">
-  <h1>WebPhone</h1>
-  <p class="lead">Hello World!</p>
+
+<div class="grid-block small-12 vertical medium-horizontal">
+  <div class="grid-content small-12">
+    <section class="block-list recent-activities">
+      <header>Recent Activity</header>
+      <ul>
+        <li ng-repeat="activity in activities" class="clearfix">
+          <a href="#">
+            <div class="activity-icon">
+              <i class="fa" ng-class="{'fa-phone': activity.callType=='call', 'fa-plug': activity.callType=='disconnected-call', 'fa-comment-o': activity.callType=='voicemail', 'fa-exclamation': activity.callType=='missed-call'}"></i>
+            </div>
+            <div class="activity-info">
+              <span>{{activity.to_s}}</span>
+              <small>{{activity.recency}}</small>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="grid-content small-12">
+    <section class="block-list">
+      <header>Tools</header>
+      <ul>
+        <li ng-repeat="tool in tools">
+          <a href="#">
+            <i class="fa {{tool.icon}}"></i>
+            {{tool.to_s}}
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
 </div>

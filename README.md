@@ -61,7 +61,23 @@ WebPhone will have several premium features such as phone call transcripts, voic
 Source code for the functional wireframe can be found in the `app/` directory of this repo.
 
 #### Available Actions
-Imma put things here that the user can do on as I build this thing out.
+
+I have provided two wireframes of content for this project. Additional wireframes would follow the same basic pattern established on these pages.
+
+**Home Page**
+
+This is a no-nonsense homepage, with important navigation on the left and quick actions in the main area.
+
+* *Quick Call Bar*: Users can immediately enter a contact name or any phone number to initiate a call. This field will auto-focus upon page load
+* *Recent Activities*: these activities will be clickable to view more information and available actions associated with the activity type
+* *Tools*: quick links to different WebPhone tools available to the user
+
+**Make a Call**
+
+* *Speed Dial*: The `/call` endpoint has access to the user's speed dial list directly below the quick call bar
+
+* *All Contacts*: This will be an endless scrolling list of all contacts. A search filter input is available at the top of the list to narrow results
+
 
 ----
 

@@ -1,3 +1,95 @@
 @import "settings";
 @import "foundation";
 @import "font-awesome";
+
+
+#main-header {
+  background: $dark-color;
+}
+
+#main-nav {
+  background: $primary-color;
+  .menu-bar i {
+    margin-right: 1rem;
+  }
+}
+
+#main-content {
+  .block-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+#main-search {
+  .inline-label {
+    width: 100%;
+  }
+  input {
+    font-size: 185%;
+    padding: 1.5rem 0.5rem;
+  }
+  @include breakpoint(small only) {
+    input {
+      font-size: 105%;
+    }
+  }
+}
+
+#main-footer {
+  background: $dark-color;
+  .menu-bar > li > a {
+    font-size: 75%;
+  }
+}
+
+.block-list {
+  i {
+    margin-right: 1rem;
+  }
+  .float-right {
+    color: $gray-dark;
+    font-size: 88%;
+    font-style: italic;
+  }
+  &.recent-activities {
+    line-height: 1.25rem;
+    a {
+      @extend .clearfix;
+    }
+    .activity-icon {
+      float: left;
+      max-width: 2.2rem;
+      width: 5%;
+    }
+    .activity-info {
+      float: left;
+      width: 95%;
+    }
+    span {
+      display: block;
+      line-height: 1.25rem;
+      margin-bottom: 0.3rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    small {
+      display: block;
+      font-size: 75%;
+    }
+    @include breakpoint(small only) {
+      .activity-icon {
+        width: 8%;
+      }
+      .activity-info  {
+        width: 92%;
+      }
+    }
+  }
+}
+
+.fa {
+  text-align: center;
+  width: 1rem;
+}

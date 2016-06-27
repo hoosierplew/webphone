@@ -1,1 +1,1 @@
-var foundationRoutes = [{"name":"home","url":"/","path":"templates/home.html"}]; 
+var foundationRoutes = [{"name":"call","controller":"CallController","url":"/call","path":"templates/call.html"},{"name":"home","controller":"HomeController","url":"/","path":"templates/home.html"}]; 

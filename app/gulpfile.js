@@ -58,8 +58,8 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('fonts', function() {
-  gulp.src('node_modules/font-awesome/fonts')
-    .pipe(gulp.dest('build/assets/fonts'));
+  gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('client/assets/fonts'));
 });
 
 // Copies everything in the client folder except templates, Sass, and JS
@@ -162,7 +162,7 @@ gulp.task('server', ['build'], function() {
 
 // Builds your entire app once, without starting a server
 gulp.task('build', function(cb) {
-  sequence('clean', ['copy', 'copy:foundation', 'sass', 'fonts', 'uglify'], 'copy:templates', cb);
+  sequence('clean', ['fonts', 'copy', 'copy:foundation', 'sass', 'uglify'], 'copy:templates', cb);
 });
 
 // Default task: builds your app, starts a server, and recompiles assets when they change
