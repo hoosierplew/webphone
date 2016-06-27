@@ -60,6 +60,8 @@ WebPhone will have several premium features such as phone call transcripts, voic
 
 Source code for the functional wireframe can be found in the `app/` directory of this repo.
 
+**[View the functional wireframe](https://hoosierplew.github.io)**
+
 #### Available Actions
 
 I have provided two wireframes of content for this project. Additional wireframes would follow the same basic pattern established on these pages.
